@@ -10,7 +10,7 @@ import com.cloudinary.utils.ObjectUtils;
 @Configuration
 public class AppConfig {
 
-    @Value("${cloudinary.cloud.name}") // TO GET THE VAULES STORED IN THE APPLICATION.PROPERTIES WE USE THIS EXPRESSION
+    @Value("${cloudinary.cloud.name}") // TO GET THE VALUES STORED IN THE APPLICATION.PROPERTIES WE USE THIS EXPRESSION
                                        // & ANNOTATION.
     private String cloudName;
 

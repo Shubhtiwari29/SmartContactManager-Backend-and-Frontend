@@ -1,0 +1,8 @@
+target/
+.git/
+*.md
+.idea/
+*.iml
+*.log
+.env
+node_modules/

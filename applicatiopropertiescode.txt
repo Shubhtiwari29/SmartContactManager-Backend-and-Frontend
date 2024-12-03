@@ -1,0 +1,76 @@
+spring.application.name=SCM
+
+spring.datasource.url=jdbc:mysql://localhost:3306/scm
+spring.datasource.username=root
+spring.datasource.password=Shubh@29
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.properties.hibernate.format_sql=true
+
+# Oauth configuration
+
+spring.security.oauth2.client.registration.google.client-name=google
+spring.security.oauth2.client.registration.google.client-id=115034058931-ug52jugtdsvv46uo8395qorredj1c9kb.apps.googleusercontent.com
+spring.security.oauth2.client.registration.google.client-secret=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
+spring.security.oauth2.client.registration.google.scope=email,profile
+
+
+spring.security.oauth2.client.registration.github.client-id=Iv23liPILzUM0QWn6qRb
+spring.security.oauth2.client.registration.github.client-secret=fa3d54ada5818579565c258c2a3adcc3a2f293b2
+spring.security.oauth2.client.registration.github.scope=email,profile
+
+# TO UPLOAD AN IMAGE WE ARE USING CLOUDINARY[BELOW ARE IT'S PROPERTIES]
+
+cloudinary.cloud.name=dyaxwwtpf
+cloudinary.api.key=19346726339162 8
+cloudinary.api.secret=KigiiZdW5dc0kCvRF_EyZIEJ0II
+
+# EMAIL CONFIGURATION
+
+spring.mail.host=live.smtp.mailtrap.io
+spring.mail.port=587
+spring.mail.username=api
+spring.mail.password=e3b4285b10554473875596233de1c114
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.strttles.enable=true
+
+spring.mail.properties.domain_name=scm@demomailtrap.com
+
+
+
+
+spring.application.name=SCM
+
+spring.datasource.url=jdbc:mysql://localhost:3306/scm
+spring.datasource.username=${DB_USERNAME}
+spring.datasource.password=${DB_PASSWORD}
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.properties.hibernate.format_sql=true
+
+# Oauth configuration
+spring.security.oauth2.client.registration.google.client-name=google
+spring.security.oauth2.client.registration.google.client-id=${GOOGLE_CLIENT_ID}
+spring.security.oauth2.client.registration.google.client-secret=${GOOGLE_CLIENT_SECRET}
+spring.security.oauth2.client.registration.google.scope=email,profile
+
+spring.security.oauth2.client.registration.github.client-id=${GITHUB_CLIENT_ID}
+spring.security.oauth2.client.registration.github.client-secret=${GITHUB_CLIENT_SECRET}
+spring.security.oauth2.client.registration.github.scope=email,profile
+
+# Cloudinary configuration
+cloudinary.cloud.name=dyaxwwtpf
+cloudinary.api.key=${CLOUDINARY_API_KEY}
+cloudinary.api.secret=${CLOUDINARY_API_SECRET}
+
+# Email configuration
+spring.mail.host=live.smtp.mailtrap.io
+spring.mail.port=587
+spring.mail.username=${MAIL_USERNAME}
+spring.mail.password=${MAIL_PASSWORD}
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+spring.mail.properties.domain_name=scm@demomailtrap.com
